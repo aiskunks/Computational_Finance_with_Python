@@ -2,9 +2,9 @@
 
 The Monte Carlo technique employs random sampling from a distribution to tackle intricate mathematical challenges, often in the realm of calculus integration where exact solutions may be elusive. Here are some standard applications:
 
-Calculating an Integral – For instance, determining the value of Pi utilizing Monte Carlo, a method that computes the area of a circle through integration.
+* Calculating an Integral – For instance, determining the value of Pi utilizing Monte Carlo, a method that computes the area of a circle through integration.  
 
-Assessing Composite Random Variables – Like finding the distribution characteristics of a loss distribution defined by frequency X severity, where both are random variables. This includes statistics such as mean or average, which remains an integration challenge.
+* Assessing Composite Random Variables – Like finding the distribution characteristics of a loss distribution defined by frequency X severity, where both are random variables. This includes statistics such as mean or average, which remains an integration challenge.  
 
 In the field of finance, Monte Carlo simulations are utilized across various domains. Some notable applications include:
 
