@@ -244,6 +244,47 @@ Where:
 - Negative excess returns imply underperformance relative to the benchmark or that the investment earned less than what could have been earned by investing in a risk-free asset.
 - It's essential to use an appropriate benchmark that reflects the risk and investment style of the asset or strategy being evaluated.
 
+## Random Variables
+
+A **random variable** (often denoted as \(X, Y, Z,\) etc.) is a function that maps the outcomes of unpredictable processes to numerical values. They can be either discrete (having specific, separate values) or continuous (having any value in a range).
+
+### Discrete Random Variable:
+
+A discrete random variable has a countable number of possible values. The probability of a discrete random variable \(X\) taking on a particular value \(x\) is given by \(P(X = x)\).
+
+**Probability Mass Function (PMF)**:
+
+The PMF gives the probability that a discrete random variable is exactly equal to some value. It's given by:
+
+\[ p(x) = P(X = x) \]
+
+For all \(x\), \(0 \leq p(x) \leq 1\), and the sum of \(p(x)\) over all possible values of \(x\) is 1.
+
+### Continuous Random Variable:
+
+A continuous random variable can take any value in a range. It's described not by a PMF, but by a **probability density function (PDF)**.
+
+**Probability Density Function (PDF)**:
+
+While the value of the PDF at any given \(x\) does not give the probability \(P(X = x)\) (because for continuous variables this is always 0), the area under the PDF curve between two points gives the probability that \(X\) falls between those values.
+
+Mathematically, the probability that \(X\) is between \(a\) and \(b\) is:
+
+\[ P(a \leq X \leq b) = \int_{a}^{b} f(x) \, dx \]
+
+For all \(x\), \(f(x) \geq 0\), and the integral of \(f(x)\) over all possible values of \(x\) is 1.
+
+**Cumulative Distribution Function (CDF)**:
+
+For both discrete and continuous random variables, the CDF gives the probability that the random variable is less than or equal to a certain possible value \(x\).
+
+\[ F(x) = P(X \leq x) \]
+
+### Notes:
+
+- For discrete random variables, the CDF is found by summing up the probabilities.
+- For continuous random variables, the CDF at \(x\) is the area to the left of \(x\) under the PDF curve.
+
 
 
 ## Granger Causality
