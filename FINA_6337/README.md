@@ -285,6 +285,65 @@ For both discrete and continuous random variables, the CDF gives the probability
 - For discrete random variables, the CDF is found by summing up the probabilities.
 - For continuous random variables, the CDF at \(x\) is the area to the left of \(x\) under the PDF curve.
 
+## Discrete vs Continuous Random Variables
+
+Random variables can be classified into two main types: discrete and continuous. These classifications are based on the type of values the random variable can assume.
+
+### Discrete Random Variables:
+
+- **Definition**: A random variable is said to be discrete if it can take on a finite or countably infinite set of values.
+- **Examples**: Number of heads in three coin flips, number of defective items in a sample, etc.
+
+**Probability Mass Function (PMF)**:
+
+- The PMF is used to specify the probability distribution of a discrete random variable.
+- Denoted as \( p(x) \) for a value \( x \), the PMF is:
+
+\[ p(x) = P(X = x) \]
+
+This means that the probability \( X \) takes on the value \( x \) is \( p(x) \).
+
+**Properties**:
+
+1. For every \( x \):
+
+\[ 0 \leq p(x) \leq 1 \]
+
+2. The sum of all probabilities is 1:
+
+\[ \sum_{all \ x} p(x) = 1 \]
+
+### Continuous Random Variables:
+
+- **Definition**: A random variable is said to be continuous if it can take on an infinite number of values in a given range.
+- **Examples**: Height of individuals in a group, time it takes for a light bulb to burn out, etc.
+
+**Probability Density Function (PDF)**:
+
+- The PDF is used to specify the probability distribution of a continuous random variable.
+- Unlike PMF, the value of the PDF at a particular point doesn't represent the actual probability. Instead, it represents the relative likelihood.
+
+Given a PDF \( f(x) \):
+
+\[ P(a \leq X \leq b) = \int_{a}^{b} f(x) \, dx \]
+
+This means the probability that \( X \) falls between \( a \) and \( b \) is the area under the curve of \( f(x) \) from \( a \) to \( b \).
+
+**Properties**:
+
+1. For every \( x \):
+
+\[ f(x) \geq 0 \]
+
+2. The integral of \( f(x) \) over all possible values is 1:
+
+\[ \int_{-\infty}^{\infty} f(x) \, dx = 1 \]
+
+### Conclusion:
+
+- **Discrete** random variables have specific, countable outcomes with corresponding probabilities defined by the PMF.
+- **Continuous** random variables can take on any value within a range, and their probabilities are described by the PDF.
+
 
 
 ## Granger Causality
