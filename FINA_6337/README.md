@@ -618,6 +618,30 @@ where \( \bar{x} \) and \( \bar{y} \) are the sample means of \( X \) and \( Y \
 Note: The covariance of a variable with itself is its variance, i.e., \( \text{Cov}(X,X) = \sigma^2_X \).
 
 
+## Variance of Sums of Random Variables
+
+When adding two random variables, the variance of the sum is not just the sum of their individual variances unless the variables are independent. 
+
+### Equation:
+
+For two random variables \( X \) and \( Y \):
+
+1. **If \( X \) and \( Y \) are independent**:
+\[ \text{Var}(X + Y) = \text{Var}(X) + \text{Var}(Y) \]
+
+2. **If \( X \) and \( Y \) are not independent**:
+\[ \text{Var}(X + Y) = \text{Var}(X) + \text{Var}(Y) + 2\text{Cov}(X, Y) \]
+
+Where \( \text{Var} \) denotes variance and \( \text{Cov} \) denotes the covariance between \( X \) and \( Y \).
+
+### General Formula:
+
+For \( n \) random variables \( X_1, X_2, ... , X_n \):
+
+\[ \text{Var}\left( \sum_{i=1}^{n} X_i \right) = \sum_{i=1}^{n} \text{Var}(X_i) + 2\sum_{i=1}^{n-1} \sum_{j=i+1}^{n} \text{Cov}(X_i, X_j) \]
+
+Note: The double summation accounts for all pairwise covariance terms among the \( n \) random variables.
+
 
 
 ## Granger Causality
