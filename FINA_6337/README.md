@@ -642,6 +642,36 @@ For \( n \) random variables \( X_1, X_2, ... , X_n \):
 
 Note: The double summation accounts for all pairwise covariance terms among the \( n \) random variables.
 
+## Exponential Growth Model in Finance
+
+In finance, exponential growth often refers to the process by which an amount of money grows at a rate that is proportionate to the amount already present. This is the fundamental concept behind compound interest. 
+
+### Compound Interest Formula:
+
+The exponential model for compound interest can be represented as:
+
+\[ A = P(1 + r/n)^{nt} \]
+
+Where:
+- \( A \) is the future value of the investment/loan, including interest.
+- \( P \) is the principal investment/loan amount (initial deposit or loan amount).
+- \( r \) is the annual interest rate (decimal form).
+- \( n \) is the number of times interest is compounded per year.
+- \( t \) is the number of years the money is invested/borrowed for.
+
+### Continuous Compounding:
+
+When interest is compounded continuously, the formula becomes:
+
+\[ A = Pe^{rt} \]
+
+Where:
+- \( e \) is Euler's number (approximately equal to 2.71828).
+
+### Interpretation:
+
+The exponential growth model is fundamental in finance, especially in the context of savings, investments, and loans. It explains why small differences in interest rates can lead to significant differences in end values over time, especially when the compounding frequency is high or the investment horizon is long.
+
 
 
 ## Granger Causality
