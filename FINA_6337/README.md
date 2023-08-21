@@ -426,6 +426,54 @@ If each of the \( n \) values in a finite set is equally likely, the variable ha
 
 The uniform distribution is often used in computer simulations to generate "random" numbers between a specified range.
 
+## Normal Distribution
+
+The Normal distribution, also known as the Gaussian distribution, is one of the most widely known and used probability distributions in statistics and in nature.
+
+### Definition:
+
+A random variable \( X \) follows a normal distribution if its probability density function (pdf) is given by:
+
+\[ f(x|\mu,\sigma^2) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}} \]
+
+where:
+- \( \mu \) is the mean or expected value of the distribution.
+- \( \sigma^2 \) is the variance.
+- \( \sigma \) is the standard deviation.
+
+### Parameters:
+
+- \( \mu \): Mean of the distribution.
+- \( \sigma^2 \): Variance of the distribution.
+
+### Properties:
+
+1. **Symmetry**: The normal distribution is symmetric about its mean.
+2. **Bell Curve**: The shape of the normal distribution is known as a bell curve.
+3. **Empirical Rule**: For a normal distribution:
+   - Approximately 68% of the data falls within one standard deviation of the mean (\( \mu \pm \sigma \)).
+   - Approximately 95% falls within two standard deviations (\( \mu \pm 2\sigma \)).
+   - Approximately 99.7% falls within three standard deviations (\( \mu \pm 3\sigma \)).
+
+### Cumulative Distribution Function (CDF):
+
+The CDF of a normal random variable \( X \) is given by:
+
+\[ F(x) = \int_{-\infty}^{x} f(u) \, du \]
+
+However, this integral doesn't have a closed-form expression in elementary functions and is usually computed using numerical methods or looked up in tables. It's often represented as \( \Phi(x) \) or by using error functions.
+
+### Standard Normal Distribution:
+
+A normal distribution with \( \mu = 0 \) and \( \sigma = 1 \) is called a standard normal distribution. The variable used is often denoted as \( Z \). Any normal variable can be transformed into a standard normal variable using:
+
+\[ Z = \frac{X - \mu}{\sigma} \]
+
+### Applications:
+
+The normal distribution is foundational in statistics and is used in the Central Limit Theorem, hypothesis testing, confidence intervals, and more. Many natural phenomena are approximately normally distributed, making it a vital tool in many fields.
+
+
 
 
 ## Granger Causality
