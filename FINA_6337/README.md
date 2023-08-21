@@ -549,6 +549,54 @@ Expected value is foundational in many areas of mathematics, economics, and fina
 - In finance, the expected value can help determine the expected return on an investment.
 - In decision theory, expected value can be used to choose between different strategies based on their anticipated outcomes.
 
+## Variance, Skewness, and Kurtosis
+
+### Variance (\( \sigma^2 \))
+
+Variance measures the spread or dispersion of a set of data points. It gives a sense of how much individual data points differ from the mean.
+
+#### Equation:
+For a random variable \( X \) with mean \( \mu \):
+\[ \sigma^2 = E[(X - \mu)^2] \]
+
+For a sample:
+\[ s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2 \]
+
+where \( \bar{x} \) is the sample mean.
+
+---
+
+### Skewness
+
+Skewness quantifies the asymmetry of the probability distribution of a real-valued random variable about its mean. 
+
+- **Positive skewness** indicates that the distribution tail is skewed to the right of the mean.
+- **Negative skewness** indicates the distribution tail is skewed to the left.
+
+#### Equation:
+\[ \text{Skewness} = E\left[ \left( \frac{X - \mu}{\sigma} \right)^3 \right] \]
+
+For a sample:
+\[ \text{Sample Skewness} = \frac{n}{(n-1)(n-2)} \sum_{i=1}^{n} \left( \frac{x_i - \bar{x}}{s} \right)^3 \]
+
+where \( s \) is the sample standard deviation.
+
+---
+
+### Kurtosis
+
+Kurtosis quantifies the shape of the distribution's tails in relation to its overall shape. 
+
+- **Leptokurtic** (> 3 for a normal standardized distribution): Distributions with "heavy tails" or "fat tails".
+- **Platykurtic** (< 3 for a normal standardized distribution): Distributions with "light tails" or "thin tails".
+- **Mesokurtic** (= 3 for a normal standardized distribution): Normal distribution shape.
+
+#### Equation:
+\[ \text{Kurtosis} = E\left[ \left( \frac{X - \mu}{\sigma} \right)^4 \right] \]
+
+For a sample:
+\[ \text{Sample Kurtosis} = \frac{n(n+1)}{(n-1)(n-2)(n-3)} \sum_{i=1}^{n} \left( \frac{x_i - \bar{x}}{s} \right)^4 - \frac{3(n-1)^2}{(n-2)(n-3)} \]
+
 
 
 ## Granger Causality
