@@ -474,6 +474,51 @@ A normal distribution with \( \mu = 0 \) and \( \sigma = 1 \) is called a standa
 The normal distribution is foundational in statistics and is used in the Central Limit Theorem, hypothesis testing, confidence intervals, and more. Many natural phenomena are approximately normally distributed, making it a vital tool in many fields.
 
 
+## Student’s t-distribution
+
+The Student's t-distribution (or simply "t-distribution") arises when estimating the mean of a normally distributed population in situations where the sample size is small and the population variance is unknown. It resembles the normal distribution but has heavier tails.
+
+### Definition:
+
+The probability density function (pdf) of the t-distribution is:
+
+\[ f(t|v) = \frac{\Gamma\left(\frac{v + 1}{2}\right)}{\sqrt{v\pi} \cdot \Gamma\left(\frac{v}{2}\right)} \left(1 + \frac{t^2}{v}\right)^{-\left(\frac{v + 1}{2}\right)} \]
+
+where:
+- \( t \) is the value on the x-axis.
+- \( v \) is the degrees of freedom (often based on sample size).
+- \( \Gamma \) is the gamma function.
+
+### Parameters:
+
+- \( v \): Degrees of freedom. Typically \( v = n - 1 \) where \( n \) is the sample size.
+
+### Properties:
+
+1. **Symmetry**: The t-distribution is symmetric about 0.
+2. **Heavier Tails**: Compared to the normal distribution, the t-distribution has heavier tails. This accounts for the increased variability when working with smaller samples and unknown population variance.
+3. **Converges to Normal**: As \( v \to \infty \), the t-distribution approaches the standard normal distribution.
+
+### Cumulative Distribution Function (CDF):
+
+The CDF for the t-distribution, like the normal distribution, doesn't have an elementary closed-form expression. It's typically computed using special functions or looked up in t-tables.
+
+### t-Score:
+
+The t-score is a standardized score that tells how much a sample mean deviates from the population mean in terms of estimated standard errors. It's given by:
+
+\[ t = \frac{\bar{x} - \mu}{s/\sqrt{n}} \]
+
+where:
+- \( \bar{x} \) is the sample mean.
+- \( \mu \) is the population mean (or hypothesized value).
+- \( s \) is the sample standard deviation.
+- \( n \) is the sample size.
+
+### Applications:
+
+The t-distribution is frequently used in hypothesis testing (specifically, the t-test) and in constructing confidence intervals for small sample sizes when the population variance is unknown.
+
 
 
 ## Granger Causality
