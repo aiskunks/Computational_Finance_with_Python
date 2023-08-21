@@ -703,6 +703,225 @@ Consider a stock whose price increased from $100 to $110 over a month. Using log
 
 This would give you the continuously compounded return for the month.
 
+### Log Returns
+
+Log returns are calculated using the natural logarithm of the price relative (i.e., the ratio of subsequent prices). Given two consecutive prices \( P_t \) and \( P_{t-1} \), the log return \( r_t \) at time \( t \) is computed as:
+
+\[ r_t = \ln\left(\frac{P_t}{P_{t-1}}\right) \]
+
+### Dividend Discount Model
+
+The basic formula for the DDM is:
+
+\[ P_0 = \frac{D_1}{r - g} \]
+
+Where:
+
+- \( P_0 \) is the current stock price.
+- \( D_1 \) is the expected dividend next period.
+- \( r \) is the discount rate or required rate of return.
+- \( g \) is the growth rate of the dividends.
+
+If dividends are expected to be constant forever (zero growth), the DDM simplifies to the Perpetuity formula:
+
+\[ P_0 = \frac{D}{r} \]
+
+Where:
+
+- \( D \) is the constant dividend amount.
+
+For the multi-stage DDM, where dividend growth might change, the valuation is the sum of the present values of each stage.
+
+#### 1. Current Yield (CY)
+
+\[ \text{Current Yield (CY)} = \frac{\text{Annual Interest Payment (Coupon Payment)}}{\text{Current Bond Price}} \]
+
+### Leptokurtosis in Financial Distributions
+
+Leptokurtosis refers to the kurtosis of a distribution that exceeds the kurtosis of a normal distribution, which is 3.
+
+#### Kurtosis
+
+\[ \text{Kurtosis} = E\left[\left(\frac{X - \mu}{\sigma}\right)^4\right] \]
+
+Where:
+- \( X \) is the random variable.
+- \( \mu \) is the mean of the distribution.
+- \( \sigma \) is the standard deviation of the distribution.
+- \( E[\cdot] \) represents the expected value.
+
+#### Excess Kurtosis
+
+\[ \text{Excess Kurtosis} = \text{Kurtosis} - 3 \]
+
+A positive excess kurtosis value indicates leptokurtosis. 
+
+### Summary Statistics in Finance
+
+1. **Mean (Average)**
+   \[ \mu = \frac{1}{n} \sum_{i=1}^{n} x_i \]
+
+2. **Median**
+   - Middle value when sorted.
+
+3. **Mode**
+   - Most frequent value.
+
+4. **Variance**
+   \[ \sigma^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2 \]
+
+5. **Standard Deviation**
+   \[ \sigma = \sqrt{\sigma^2} \]
+
+6. **Skewness**
+   \[ \text{Skewness} = E\left[ \left( \frac{x - \mu}{\sigma} \right)^3 \right] \]
+
+7. **Kurtosis**
+   \[ \text{Kurtosis} = E\left[ \left( \frac{x - \mu}{\sigma} \right)^4 \right] \]
+
+8. **Minimum and Maximum**
+   - Smallest and largest values.
+
+9. **Range**
+   \[ \text{Range} = \text{Maximum} - \text{Minimum} \]
+
+10. **Quantiles**
+   - Partitions based on data points (e.g., Quartiles, Deciles).
+
+### Volatility in Finance
+
+**Volatility** refers to the degree of variation of a financial instrument's price over time. It's typically measured using the standard deviation or variance of returns.
+
+1. **Daily Return**:
+   \[ r_t = \frac{P_t - P_{t-1}}{P_{t-1}} \]
+   Where:
+   - \( r_t \) is the return on day \( t \)
+   - \( P_t \) is the price on day \( t \)
+   - \( P_{t-1} \) is the price on the previous day
+
+2. **Variance of Returns**:
+   \[ \sigma^2 = \frac{1}{n-1} \sum_{i=1}^{n} (r_i - \bar{r})^2 \]
+   Where:
+   - \( \sigma^2 \) is the variance
+   - \( n \) is the number of observations
+   - \( r_i \) is the return of the ith observation
+   - \( \bar{r} \) is the mean return
+
+3. **Standard Deviation (Volatility)**:
+   \[ \sigma = \sqrt{\sigma^2} \]
+   The standard deviation (\( \sigma \)) is the most commonly used measure of volatility in finance.
+
+4. **Annualized Volatility**:
+   \[ \sigma_{annual} = \sigma_{daily} \times \sqrt{252} \]
+   Where 252 is typically used as the number of trading days in a year.
+
+### Bivariate Descriptive Statistics in Finance
+
+**Bivariate descriptive statistics** help in understanding the relationship between two financial variables.
+
+1. **Scatter Plot**:
+   A scatter plot graphically displays the relationship between two variables.
+
+2. **Covariance**:
+   It measures the degree to which two variables move together.
+   
+   \[ \text{Cov}(X, Y) = \frac{\sum_{i=1}^{n} (X_i - \bar{X})(Y_i - \bar{Y})}{n-1} \]
+   
+   Where:
+   - \( X_i \) and \( Y_i \) are data points for the variables \( X \) and \( Y \) respectively
+   - \( \bar{X} \) and \( \bar{Y} \) are the means of \( X \) and \( Y \) respectively
+   - \( n \) is the number of data points
+
+3. **Correlation Coefficient (Pearson's \( r \))**:
+   This measures the strength and direction of a linear relationship between two variables.
+   
+   \[ r_{XY} = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y} \]
+   
+   Where:
+   - \( \sigma_X \) and \( \sigma_Y \) are the standard deviations of \( X \) and \( Y \) respectively
+   - \( r_{XY} \) is the correlation coefficient between \( X \) and \( Y \)
+
+### Value-at-Risk (VaR) in Finance
+
+**Value-at-Risk (VaR)** provides an estimate of the potential loss an investment portfolio might face over a specific time period for a set confidence level.
+
+#### 1. **Parametric (Variance-Covariance) VaR**:
+   Using the normal distribution, VaR is calculated by:
+
+   \[ \text{VaR}_{\alpha} = \mu - Z_{\alpha} \sigma \]
+
+   Where:
+   - \( \mu \) is the expected return.
+   - \( \sigma \) is the standard deviation of the returns.
+   - \( Z_{\alpha} \) is the Z-score corresponding to the desired confidence level \( \alpha \).
+
+#### 2. **Historical Simulation VaR**:
+   Arrange all returns from worst to best and find the return at the \( (1-\alpha) \) percentile.
+
+#### 3. **Monte Carlo Simulation VaR**:
+   Use random sampling to generate a large number of potential future return paths and then find the \( (1-\alpha) \) percentile return for the simulated returns.
+
+### Value-at-Risk (VaR) Computation in Finance
+
+**Value-at-Risk (VaR)** aims to quantify the potential loss an investment portfolio could face over a specific period for a given confidence level.
+
+#### 1. **Parametric (Variance-Covariance) VaR**:
+
+Given that returns are normally distributed, the VaR can be computed as:
+
+\[ \text{VaR}_{\alpha} = \mu \times t + Z_{\alpha} \times \sigma \times \sqrt{t} \]
+
+Where:
+- \( \mu \) = Expected return over time \( t \)
+- \( \sigma \) = Standard deviation of the returns
+- \( Z_{\alpha} \) = Z-score corresponding to the desired confidence level \( \alpha \)
+- \( t \) = Time horizon
+
+#### 2. **Historical Simulation VaR**:
+
+For this method:
+- Collect a set of historical returns.
+- Rank the returns from worst to best.
+- Identify the return at the \( (1-\alpha) \) percentile.
+
+The result is your VaR at the \( \alpha \) confidence level.
+
+#### 3. **Monte Carlo Simulation VaR**:
+
+This involves:
+- Modeling the behavior of individual risk factors using stochastic processes.
+- Simulating a large number of potential future scenarios.
+- Calculating portfolio returns for each scenario.
+- Ranking the simulated returns and determining the \( (1-\alpha) \) percentile return.
+
+### Autocorrelation in Returns in Finance
+
+**Autocorrelation** describes the relationship between a series and a lagged version of itself. It is defined as:
+
+\[ \rho_k = \frac{\sum_{t=k+1}^{T} (r_t - \bar{r})(r_{t-k} - \bar{r})}{\sum_{t=1}^{T} (r_t - \bar{r})^2} \]
+
+Where:
+- \( \rho_k \) = Autocorrelation of the series at lag \( k \)
+- \( r_t \) = Return at time \( t \)
+- \( \bar{r} \) = Mean return over the sample
+- \( T \) = Length of the time series
+
+Autocorrelation can be tested using the Ljung-Box test, Durbin-Watson test, and others to check for randomness in returns.
+
+### Variance Ratio in Finance
+
+The **Variance Ratio** (\( VR \)) for \( k \)-period returns is defined as:
+
+\[ VR(k) = \frac{\text{Var}[k \cdot r_t]}{k \cdot \text{Var}[r_t]} \]
+
+Where:
+- \( VR(k) \) = Variance ratio for \( k \)-period returns.
+- \( r_t \) = 1-period return.
+- \( \text{Var}[k \cdot r_t] \) = Variance of the aggregated \( k \)-period returns.
+- \( \text{Var}[r_t] \) = Variance of 1-period returns.
+
+If \( VR(k) = 1 \), it suggests that price changes are random. If \( VR(k) > 1 \), it indicates positive autocorrelation, and if \( VR(k) < 1 \), it indicates negative autocorrelation.
+
 
 
 ## Granger Causality
