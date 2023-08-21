@@ -672,6 +672,37 @@ Where:
 
 The exponential growth model is fundamental in finance, especially in the context of savings, investments, and loans. It explains why small differences in interest rates can lead to significant differences in end values over time, especially when the compounding frequency is high or the investment horizon is long.
 
+## Log Prices in Finance
+
+In finance, log prices refer to the natural logarithm of asset prices. Using log prices can make certain calculations, especially those involving compound returns, more straightforward.
+
+### Formula:
+
+Given an asset with a price \( P \), the log price \( L \) is defined as:
+
+\[ L = \ln(P) \]
+
+Where:
+- \( \ln \) is the natural logarithm.
+
+### Advantages of Using Log Prices:
+
+1. **Returns Calculation**: The difference between the log prices of an asset at two different times gives the continuously compounded return over that period.
+    \[ r = \ln(P_t) - \ln(P_{t-1}) \]
+   
+2. **Additivity**: Continuous returns (log returns) are additive across time. This is useful when aggregating returns over non-overlapping periods.
+    \[ r_{total} = \ln(P_t) - \ln(P_0) = \sum_{i=1}^{t} r_i \]
+
+3. **Statistical Properties**: Log returns are often more amenable to statistical analyses than simple returns, as they're often more closely normally distributed.
+
+### Example:
+
+Consider a stock whose price increased from $100 to $110 over a month. Using log prices, the continuously compounded monthly return is:
+
+\[ r = \ln(110) - \ln(100) \]
+
+This would give you the continuously compounded return for the month.
+
 
 
 ## Granger Causality
