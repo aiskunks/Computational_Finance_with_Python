@@ -162,6 +162,40 @@ This translates to an annualized log return of 25.2%.
 
 It's essential to use the correct number of periods for \( n \) depending on the data frequency (daily, monthly, quarterly, etc.) to get accurate annualized returns.
 
+## Adjusting Returns for Dividends
+
+When analyzing the returns of a stock or another asset, dividends play an essential role. Total return accounts for both price appreciation and dividends (or other distributions). If dividends aren't reinvested, you might simply add the dividend yield to the price return. If dividends are reinvested, the computation is slightly more involved.
+
+### Simple Returns with Dividends:
+
+When calculating simple returns with dividends, consider both the change in price and the dividend received.
+
+\[ r_t = \frac{P_t + D_t - P_{t-1}}{P_{t-1}} \]
+
+Where:
+- \( r_t \) is the return at time \( t \).
+- \( P_t \) is the price at time \( t \).
+- \( P_{t-1} \) is the price at time \( t-1 \).
+- \( D_t \) is the dividend received at time \( t \).
+
+### Log Returns with Dividends:
+
+When dividends are reinvested, log returns can be adjusted for dividends as follows:
+
+\[ r_t = \ln\left(\frac{P_t + D_t}{P_{t-1}}\right) \]
+
+Where:
+- \( r_t \) is the log return at time \( t \).
+- \( P_t \) is the price at time \( t \).
+- \( P_{t-1} \) is the price at time \( t-1 \).
+- \( D_t \) is the dividend received at time \( t \).
+
+### Notes:
+
+- Adjusting for dividends gives a clearer picture of the true return an investor would receive.
+- For stocks with significant dividend distributions, this adjustment can make a material difference in understanding the total returns.
+- When dividends are reinvested, they contribute to the compounding effect, which can significantly impact long-term returns.
+
 
 
 
