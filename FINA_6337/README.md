@@ -197,6 +197,32 @@ Where:
 - When dividends are reinvested, they contribute to the compounding effect, which can significantly impact long-term returns.
 
 
+## Adjusting Returns for an Entire Portfolio
+
+The return of a portfolio is determined by the returns of its constituent assets and their respective weights in the portfolio. To calculate the portfolio return, you'll want to take a weighted average of the returns of the individual assets.
+
+### Portfolio Simple Returns:
+
+The simple return for a portfolio, \( r_p \), is given by:
+
+\[ r_p = \sum_{i=1}^{n} w_i r_i \]
+
+Where:
+- \( r_p \) is the portfolio return.
+- \( w_i \) is the weight of asset \( i \) in the portfolio.
+- \( r_i \) is the return of asset \( i \).
+- \( n \) is the number of assets in the portfolio.
+
+### Portfolio Log Returns:
+
+For log returns, the process isn't as straightforward due to the nature of logarithms. You cannot directly weight the log returns. Instead, you'd use the asset weights with the simple returns to compute the portfolio's overall return and then compute its log return.
+
+### Notes:
+
+- It's crucial to periodically review and rebalance your portfolio. The actual asset weights can drift over time due to the varying performance of the underlying assets.
+- Portfolio diversification can help reduce risk. By holding a mix of assets, negative returns from one asset can potentially be offset by positive returns from another.
+- Always consider transaction costs and taxes when rebalancing a portfolio, as they can erode returns.
+
 
 
 ## Granger Causality
