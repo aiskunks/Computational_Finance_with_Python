@@ -597,6 +597,27 @@ Kurtosis quantifies the shape of the distribution's tails in relation to its ove
 For a sample:
 \[ \text{Sample Kurtosis} = \frac{n(n+1)}{(n-1)(n-2)(n-3)} \sum_{i=1}^{n} \left( \frac{x_i - \bar{x}}{s} \right)^4 - \frac{3(n-1)^2}{(n-2)(n-3)} \]
 
+## Covariance
+
+Covariance is a measure of the relationship between two random variables. It indicates the direction of the linear relationship between the variables. 
+
+- **Positive covariance** implies that as one variable increases, the other tends to increase as well.
+- **Negative covariance** implies that as one variable increases, the other tends to decrease.
+
+However, covariance does not indicate the strength of the relationship, nor is it standardized. Therefore, it can take any value between negative infinity and positive infinity, which makes it difficult to interpret on its own.
+
+### Equation:
+For two random variables \( X \) and \( Y \) with means \( \mu_X \) and \( \mu_Y \) respectively:
+\[ \text{Cov}(X,Y) = E[(X - \mu_X)(Y - \mu_Y)] \]
+
+For samples:
+\[ \text{Cov}(X,Y) = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y}) \]
+
+where \( \bar{x} \) and \( \bar{y} \) are the sample means of \( X \) and \( Y \) respectively.
+
+Note: The covariance of a variable with itself is its variance, i.e., \( \text{Cov}(X,X) = \sigma^2_X \).
+
+
 
 
 ## Granger Causality
