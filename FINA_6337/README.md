@@ -1199,6 +1199,69 @@ Where:
 This equation illustrates how each asset, as well as the interaction between them (covariance), contributes to the total portfolio variance.
 
 
+### Brownian Motion (Wiener Process)
+
+Brownian motion, often referred to as the Wiener process in finance, is a cornerstone of modern financial mathematics, especially in the domain of option pricing.
+
+**Properties:**
+
+1. The process starts at zero: \( W_0 = 0 \).
+2. The increments are normally distributed: for any \( s < t \), \( W_t - W_s \) is distributed as \( N(0, t - s) \).
+3. The increments are independent: for any \( s < t \) and \( u < v \), the increments \( W_t - W_s \) and \( W_v - W_u \) are independent.
+
+The differential form of the Wiener process can be expressed as:
+
+\[ dW_t \sim N(0, dt) \]
+
+This indicates the distribution of small changes in the process over an infinitesimal time interval \( dt \).
+
+### Geometric Brownian Motion (GBM)
+
+Geometric Brownian Motion is a stochastic process used to model stock prices in various financial applications, notably in the Black-Scholes option pricing model. The key assumption is that the logarithm of the stock price follows a Brownian motion with a constant drift and volatility.
+
+**Stochastic Differential Equation:**
+
+\[ dS_t = \mu S_t dt + \sigma S_t dW_t \]
+
+**Parameters:**
+- \( S_t \): Stock price at time \( t \).
+- \( \mu \): Expected return (drift) of the stock.
+- \( \sigma \): Volatility of the stock.
+- \( dW_t \): Increment of a standard Wiener process (Brownian motion).
+
+**Solution:**
+
+Given an initial stock price \( S_0 \), the stock price at time \( t \) is:
+
+\[ S_t = S_0 e^{(\mu - \frac{\sigma^2}{2})t + \sigma W_t} \]
+
+### Binomial Model
+
+The binomial option pricing model is a method used for valuing American options. The model divides the time to expiration into intervals and calculates the option price based on a tree of stock prices. Each node represents a possible stock price, and the option price is derived by working backward from the end of the period to the present.
+
+**One-step Binomial Model**:
+
+**Parameters**:
+- \( S \): Current stock price.
+- \( u \): Factor by which stock price increases.
+- \( d \): Factor by which stock price decreases.
+- \( r \): Risk-free interest rate per period.
+- \( \Delta t \): Length of the time step.
+
+**Possible stock prices at the end of one period**:
+\[ S_u = S \times u \]
+\[ S_d = S \times d \]
+
+**Option values at the end of the period**:
+\[ C_u \] (for the up state)
+\[ C_d \] (for the down state)
+
+**Present value of the option (risk-neutral pricing)**:
+\[ C = \frac{1}{1+r} \left( p C_u + (1-p) C_d \right) \]
+
+**Risk-neutral probability**:
+\[ p = \frac{e^{r \Delta t} - d}{u - d} \]
+
 
 
 ## Granger Causality
