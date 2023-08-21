@@ -98,6 +98,38 @@ This translates to approximately 22.45% annual return, which means the investmen
 
 When evaluating investments, it's crucial to consider both the holding period return and the annualized return. The latter is particularly helpful in comparing the performance of investments held for different lengths of time. By annualizing returns, investors can determine which investments are more effective in generating profit on an annual basis.
 
+## Log Returns (Continuously Compounded Returns)
+
+Log returns, also known as continuously compounded returns, provide a way to measure returns that is particularly useful for mathematical and statistical analyses. They are typically used because of their nice properties when aggregating over time and when products of returns are involved.
+
+### Log Return Formula:
+
+The log return for a single period is calculated using the formula:
+
+\[ r_t = \ln\left(\frac{P_t}{P_{t-1}}\right) \]
+
+Where:
+- \( r_t \) is the log return at time \( t \).
+- \( P_t \) is the asset price at time \( t \).
+- \( P_{t-1} \) is the asset price at the previous time (e.g., the previous day or month).
+
+### Interpretation:
+
+- Log returns can be additive across time, unlike simple returns. For instance, the cumulative log return over multiple periods is just the sum of the log returns over those periods.
+- They transform the process of obtaining returns from a multiplicative one (as with simple returns) to an additive one, simplifying certain mathematical and statistical operations.
+
+### Example:
+
+Suppose an asset has a price of $100 on day 1 and $105 on day 2. The log return for day 2 would be:
+
+\[ r_2 = \ln\left(\frac{105}{100}\right) \approx 0.04879 \]
+
+This translates to a log return of approximately 4.879%.
+
+### Note:
+
+Log returns are commonly used in financial econometrics, time series analysis, and other areas of finance where mathematical tractability and consistency are needed. They are especially convenient when analyzing the returns of assets over a long period or when conducting multiperiod analyses.
+
 
 
 ## Granger Causality
