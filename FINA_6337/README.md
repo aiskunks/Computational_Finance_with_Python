@@ -519,6 +519,36 @@ where:
 
 The t-distribution is frequently used in hypothesis testing (specifically, the t-test) and in constructing confidence intervals for small sample sizes when the population variance is unknown.
 
+## Expected Value (E)
+
+The expected value is a fundamental concept in probability theory and statistics, representing the average or mean value of a random variable. It provides a measure of the "center" of a probability distribution.
+
+### Definition:
+
+For a **discrete random variable** \( X \) with possible outcomes \( x_i \) and associated probabilities \( p(x_i) \), the expected value \( E(X) \) is given by:
+
+\[ E(X) = \sum_i x_i \times p(x_i) \]
+
+For a **continuous random variable** with probability density function \( f(x) \):
+
+\[ E(X) = \int x \times f(x) \, dx \]
+
+### Intuition:
+
+The expected value can be thought of as the "weighted average" of all possible values that the random variable can assume. Each value is weighted by its probability of occurrence.
+
+### Properties:
+
+1. **Linearity**: \( E(aX + bY) = aE(X) + bE(Y) \) where \( a \) and \( b \) are constants, and \( X \) and \( Y \) are random variables.
+2. \( E(c) = c \) where \( c \) is a constant.
+3. If \( X \) and \( Y \) are independent, then \( E(XY) = E(X)E(Y) \).
+
+### Applications:
+
+Expected value is foundational in many areas of mathematics, economics, and finance. For example:
+- In finance, the expected value can help determine the expected return on an investment.
+- In decision theory, expected value can be used to choose between different strategies based on their anticipated outcomes.
+
 
 
 ## Granger Causality
