@@ -1138,6 +1138,66 @@ Test Statistic:
 
 For both versions of the test, if the LM statistic exceeds the critical value, the null hypothesis of stationarity is rejected.
 
+### Equity Shock
+
+In finance, an "equity shock" refers to a sudden and significant event impacting stock values. 
+
+#### Model
+
+Given:
+- \( r_t \): Return of a stock at time \( t \).
+- \( s_t \): Shock at time \( t \).
+
+The impact of a shock on returns can be modeled as:
+\[ r_t = \alpha + \beta s_t + \epsilon_t \]
+
+Where:
+- \( \alpha \) is the constant term.
+- \( \beta \) represents the sensitivity of the stock return to the shock.
+- \( \epsilon_t \) is the error term.
+
+If \( \beta \) is significantly different from zero, it suggests that the stock return is affected by the shock.
+
+### Dividend Shock
+
+In finance, a "dividend shock" pertains to unexpected changes in a company's dividend payout, which can significantly impact stock valuations.
+
+#### Model
+
+Given:
+- \( P_t \): Stock price at time \( t \).
+- \( D_t \): Dividend payout at time \( t \).
+- \( DS_t \): Dividend shock at time \( t \).
+
+The impact of a dividend shock on stock prices can be represented as:
+\[ P_t = \alpha + \beta D_t + \gamma DS_t + \epsilon_t \]
+
+Where:
+- \( \alpha \) is the constant term.
+- \( \beta \) captures the sensitivity of the stock price to dividend payouts.
+- \( \gamma \) represents the sensitivity of the stock price to dividend shocks.
+- \( \epsilon_t \) is the error term.
+
+A significant value of \( \gamma \) implies that the stock price reacts notably to dividend shocks.
+
+
+### Variance Decomposition
+
+In finance, variance decomposition assesses how individual assets in a portfolio contribute to the portfolio's overall risk or variance.
+
+#### Two-Asset Portfolio
+
+For a portfolio comprised of two assets with weights \( w_1 \) and \( w_2 \), the variance (\( \sigma^2 \)) of the portfolio can be expressed as:
+
+\[ \sigma^2_{\text{portfolio}} = w_1^2 \sigma^2_1 + w_2^2 \sigma^2_2 + 2 w_1 w_2 \sigma_{1,2} \]
+
+Where:
+- \( \sigma^2_1 \) represents the variance of asset 1.
+- \( \sigma^2_2 \) denotes the variance of asset 2.
+- \( \sigma_{1,2} \) is the covariance between the two assets.
+
+This equation illustrates how each asset, as well as the interaction between them (covariance), contributes to the total portfolio variance.
+
 
 
 
