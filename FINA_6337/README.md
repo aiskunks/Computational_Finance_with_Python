@@ -344,6 +344,41 @@ This means the probability that \( X \) falls between \( a \) and \( b \) is the
 - **Discrete** random variables have specific, countable outcomes with corresponding probabilities defined by the PMF.
 - **Continuous** random variables can take on any value within a range, and their probabilities are described by the PDF.
 
+## Bernoulli Distribution
+
+The Bernoulli distribution is a discrete probability distribution for a random variable which can take one of two possible outcomes, often labeled 0 and 1. It represents the probability distribution of any single experiment that asks a yes–no question. Such an experiment is called a Bernoulli trial.
+
+### Parameters:
+- \( p \): The probability of success (where the outcome is 1).
+
+### Random Variable:
+The random variable \( X \) following a Bernoulli distribution can take on the values 0 and 1. 
+- \( X = 1 \) with probability \( p \)
+- \( X = 0 \) with probability \( 1 - p \)
+
+### Probability Mass Function (PMF):
+
+The PMF of a Bernoulli-distributed random variable is:
+
+\[ P(X = k) = p^k (1-p)^{1-k} \]
+
+for \( k \in \{0,1\} \).
+
+### Expected Value and Variance:
+
+- **Expected Value**: \( E[X] = p \)
+- **Variance**: \( Var(X) = p(1-p) \)
+
+### Properties:
+
+1. The Bernoulli distribution is a special case of the binomial distribution where \( n = 1 \).
+2. If \( X \) has a Bernoulli distribution with parameter \( p \), then \( 1-X \) has a Bernoulli distribution with parameter \( 1-p \).
+
+### Usage:
+
+Bernoulli distributions are often used to model experiments with binary outcomes: success/failure, yes/no, 1/0, etc.
+
+
 
 
 ## Granger Causality
