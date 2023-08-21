@@ -2,133 +2,76 @@
 
 ## Simple Returns (Arithmetic Returns)
 
-Simple returns, often referred to as arithmetic returns or simply returns, represent the percentage change in a financial asset's price over a specific period. They are the most straightforward method to calculate the return on an investment.
+Simple returns represent the percentage change in a financial asset's price over a specific period.
 
 ### Simple Return Formula:
 
 For a single-period simple return, the formula is:
-
-\[ R_t = \frac{P_t - P_{t-1}}{P_{t-1}} \]
+`R_t = (P_t - P_(t-1)) / P_(t-1)`
 
 Where:
-- \( R_t \) is the simple return at time \( t \).
-- \( P_t \) is the asset price at time \( t \).
-- \( P_{t-1} \) is the asset price at the previous time, \( t-1 \).
-
-This formula calculates the return between two consecutive time periods. To find the total return over multiple periods, you can sum the single-period returns.
+- `R_t` is the simple return at time `t`.
+- `P_t` is the asset price at time `t`.
+- `P_(t-1)` is the asset price at the previous time, `t-1`.
 
 ### Interpretation:
 
-If \( R_t \) is positive, it indicates a profit, whereas a negative \( R_t \) suggests a loss for that period. The value is often multiplied by 100 to get a percentage. For instance, a value of 0.05 or 5% means the asset increased in value by 5% from \( t-1 \) to \( t \).
-
-### Example:
-
-Let's say you bought a stock at a price of $100 (\( P_{t-1} \)) and sold it later at $110 (\( P_t \)). The simple return would be:
-
-\[ R_t = \frac{110 - 100}{100} = \frac{10}{100} = 0.10 \]
-
-Which is equivalent to a 10% return on the investment.
-
-### Note:
-
-Simple returns are particularly useful when dealing with assets that do not produce cash flows between the beginning and ending period, such as stocks without dividends. For assets that provide interim cash flows, like bonds with coupon payments, the total return (accounting for both price change and interim cash flows) would be more appropriate.
+If `R_t` is positive, it indicates a profit, whereas a negative `R_t` suggests a loss for that period.
 
 ## Holding Period Returns (HPR)
 
-The Holding Period Return (HPR) represents the total return on an investment over a given period, accounting for all cash flows and capital gains or losses. The holding period can range from a single day to several years, depending on the context.
+The Holding Period Return (HPR) represents the total return on an investment over a given period.
 
 ### Holding Period Return Formula:
 
 The formula for the holding period return is:
-
-\[ HPR = \frac{P_t + D - P_{t-1}}{P_{t-1}} \]
+`HPR = (P_t + D - P_(t-1)) / P_(t-1)`
 
 Where:
-- \( HPR \) is the holding period return.
-- \( P_t \) is the ending price of the asset.
-- \( P_{t-1} \) is the beginning (or purchase) price of the asset.
-- \( D \) is the cash dividend or cash flow received during the holding period.
+- `HPR` is the holding period return.
+- `P_t` is the ending price of the asset.
+- `P_(t-1)` is the beginning (or purchase) price of the asset.
+- `D` is the cash dividend or cash flow received during the holding period.
 
 ### Interpretation:
 
-- If the \( HPR \) is positive, it indicates a profit over the holding period.
-- If the \( HPR \) is negative, it suggests a loss over the holding period.
-- The value is often expressed as a percentage to show the percentage gain or loss. For instance, a value of 0.07 or 7% means the asset's total return (including dividends or cash flows) was 7% over the holding period.
-
-### Example:
-
-Let's say you bought a stock at a price of $100 (\( P_{t-1} \)), received a dividend of $5 (\( D \)), and sold it later at $110 (\( P_t \)). The holding period return would be:
-
-\[ HPR = \frac{110 + 5 - 100}{100} = \frac{15}{100} = 0.15 \]
-
-Which represents a 15% return on the investment over the holding period.
-
-### Note:
-
-Holding period returns are valuable for assessing the performance of an investment over a specified time frame, taking into account both capital appreciation and any additional income or cash flows. It provides a comprehensive view of the investment's performance.
+A positive `HPR` indicates a profit over the holding period, and a negative `HPR` suggests a loss.
 
 ## Annualized Returns
 
-Annualized return is a method used to express an investment's return (usually a portfolio's return) on an annual basis, taking compounding into account. It provides a clearer picture of the return over time, especially for holding periods that are not one year.
+Annualized return expresses an investment's return on an annual basis.
 
 ### Annualized Return Formula:
 
-For investments held over multiple years, the annualized return can be calculated using the formula:
-
-\[ \text{Annualized Return} = \left(1 + \text{HPR}\right)^{\frac{1}{n}} - 1 \]
+For investments held over multiple years:
+`Annualized Return = (1 + HPR)^(1/n) - 1`
 
 Where:
-- \( \text{HPR} \) is the total holding period return.
-- \( n \) is the number of years of the holding period.
+- `HPR` is the total holding period return.
+- `n` is the number of years of the holding period.
 
 ### Interpretation:
 
-- The annualized return provides an average yearly return rate, giving a better perspective of an investment's performance across time.
-- This figure is especially useful when comparing investments of different durations.
-
-### Example:
-
-Suppose you have a holding period return (HPR) of 50% over a 2-year period. The annualized return would be:
-
-\[ \text{Annualized Return} = \left(1 + 0.50\right)^{\frac{1}{2}} - 1 \approx 0.2245 \]
-
-This translates to approximately 22.45% annual return, which means the investment grows on average by this rate each year for the given period.
-
-### Note:
-
-When evaluating investments, it's crucial to consider both the holding period return and the annualized return. The latter is particularly helpful in comparing the performance of investments held for different lengths of time. By annualizing returns, investors can determine which investments are more effective in generating profit on an annual basis.
+The annualized return provides an average yearly return rate.
 
 ## Log Returns (Continuously Compounded Returns)
 
-Log returns, also known as continuously compounded returns, provide a way to measure returns that is particularly useful for mathematical and statistical analyses. They are typically used because of their nice properties when aggregating over time and when products of returns are involved.
+Log returns measure returns useful for mathematical and statistical analyses.
 
 ### Log Return Formula:
 
-The log return for a single period is calculated using the formula:
-
-\[ r_t = \ln\left(\frac{P_t}{P_{t-1}}\right) \]
+The log return for a single period is:
+`r_t = ln(P_t / P_(t-1))`
 
 Where:
-- \( r_t \) is the log return at time \( t \).
-- \( P_t \) is the asset price at time \( t \).
-- \( P_{t-1} \) is the asset price at the previous time (e.g., the previous day or month).
+- `r_t` is the log return at time `t`.
+- `P_t` is the asset price at time `t`.
+- `P_(t-1)` is the asset price at the previous time.
 
 ### Interpretation:
 
-- Log returns can be additive across time, unlike simple returns. For instance, the cumulative log return over multiple periods is just the sum of the log returns over those periods.
-- They transform the process of obtaining returns from a multiplicative one (as with simple returns) to an additive one, simplifying certain mathematical and statistical operations.
+Log returns can be additive across time. They simplify certain mathematical and statistical operations.
 
-### Example:
-
-Suppose an asset has a price of $100 on day 1 and $105 on day 2. The log return for day 2 would be:
-
-\[ r_2 = \ln\left(\frac{105}{100}\right) \approx 0.04879 \]
-
-This translates to a log return of approximately 4.879%.
-
-### Note:
-
-Log returns are commonly used in financial econometrics, time series analysis, and other areas of finance where mathematical tractability and consistency are needed. They are especially convenient when analyzing the returns of assets over a long period or when conducting multiperiod analyses.
 
 ## Annualized Log Returns (Continuously Compounded Annual Returns)
 
