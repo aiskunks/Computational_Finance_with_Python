@@ -922,6 +922,152 @@ Where:
 
 If \( VR(k) = 1 \), it suggests that price changes are random. If \( VR(k) > 1 \), it indicates positive autocorrelation, and if \( VR(k) < 1 \), it indicates negative autocorrelation.
 
+### Capital Asset Pricing Model (CAPM)
+
+The equation for the CAPM is:
+
+\[ E(R_i) = R_f + \beta_i (E(R_m) - R_f) \]
+
+Where:
+
+- \( E(R_i) \) = Expected return on the asset.
+- \( R_f \) = Risk-free rate.
+- \( \beta_i \) = Beta of the asset (how much the asset's returns move relative to the market's returns).
+- \( E(R_m) \) = Expected return on the market.
+- \( E(R_m) - R_f \) = Market risk premium (the additional return over the risk-free rate required by investors to hold the market portfolio).
+
+In the CAPM, the expected return of an asset is composed of the risk-free rate and a premium for the risk (beta) the asset adds to a diversified portfolio.
+
+### Decomposing Different Kinds of Risk
+
+1. **Total Risk**:
+    The total variability in returns of an asset or a portfolio.
+
+    \[ \sigma^2(Total) = \sigma^2(Systematic) + \sigma^2(Unsystematic) \]
+
+2. **Systematic Risk (or Market Risk)**:
+    This is the risk inherent to the entire market or market segment. It cannot be diversified away. It's affected by factors like changes in interest rates, inflation rates, and overall economic cycles.
+
+    \[ \sigma^2(Systematic) = \beta^2 \times \sigma^2(Market) \]
+   
+    Where:
+    - \( \beta \) = Beta of the asset or portfolio (measures sensitivity to the market).
+    - \( \sigma^2(Market) \) = Variance of the market.
+
+3. **Unsystematic Risk (or Idiosyncratic Risk or Diversifiable Risk)**:
+    This is the risk specific to individual assets and can be diversified away as one adds more assets to the portfolio. It includes risks like business risk, financial risk, etc.
+
+    \[ \sigma^2(Unsystematic) = \sigma^2(Total) - \sigma^2(Systematic) \]
+
+### Multifactor CAPM
+
+The equation for the multifactor model can be represented as:
+
+\[ R_i - R_f = \alpha_i + \beta_{iM} (R_M - R_f) + \beta_{i1} F_1 + \beta_{i2} F_2 + \dots + \beta_{ik} F_k + \epsilon_i \]
+
+Where:
+
+- \( R_i \) = Expected return on the asset or portfolio `i`.
+- \( R_f \) = Risk-free rate.
+- \( \alpha_i \) = Asset's alpha, which represents the unique return of the asset not explained by the systematic risks.
+- \( \beta_{iM} \) = Sensitivity of the asset or portfolio's returns to the market return.
+- \( R_M \) = Expected return on the market.
+- \( \beta_{i1}, \beta_{i2}, \dots, \beta_{ik} \) = Sensitivities of the asset or portfolio's returns to factor 1, factor 2, ..., factor k, respectively.
+- \( F_1, F_2, \dots, F_k \) = Factor 1, factor 2, ..., factor k's risk premiums.
+- \( \epsilon_i \) = Error term or idiosyncratic risk of the asset.
+
+### Coefficient of Determination (\( R^2 \))
+
+The equation for \( R^2 \) in the context of a simple linear regression is:
+
+\[ R^2 = 1 - \frac{SS_{res}}{SS_{tot}} \]
+
+Where:
+
+- \( SS_{res} \) = Sum of squares of residuals = \(\sum (y_i - \hat{y}_i)^2\)
+- \( SS_{tot} \) = Total sum of squares = \(\sum (y_i - \bar{y})^2\)
+- \( y_i \) = Actual value of the dependent variable.
+- \( \hat{y}_i \) = Predicted value of the dependent variable from the regression.
+- \( \bar{y} \) = Mean value of the dependent variable.
+
+### Adjusted Coefficient of Determination (\( R^2_{adj} \))
+
+The equation for \( R^2_{adj} \) is:
+
+\[ R^2_{adj} = 1 - \left( \frac{1 - R^2}{n - k - 1} \right) \]
+
+Where:
+
+- \( R^2 \) = Coefficient of determination.
+- \( n \) = Total number of observations.
+- \( k \) = Number of predictors (not including the constant term).
+
+### Joint Parameter Test (F-test)
+
+The hypothesis tested is:
+\[ H_0: \beta_1 = \beta_2 = \dots = \beta_k = 0 \]
+\[ H_a: \text{at least one of } \beta \text{ is not } 0 \]
+
+The F-statistic is given by:
+\[ F = \frac{(R^2 / k)}{(1 - R^2) / (n - k - 1)} \]
+
+Where:
+
+- \( R^2 \) is the coefficient of determination of the regression.
+- \( k \) is the number of predictors.
+- \( n \) is the total number of observations.
+
+The F-statistic follows an F-distribution with \( k \) and \( n - k - 1 \) degrees of freedom. A large F-statistic indicates that at least one of the predictors is significant.
+
+### Disturbance Diagnostics
+
+1. **Linearity**
+The relationship between the independent variables and the dependent variable should be linear.
+
+2. **Independence**
+Residuals should be independent of each other.
+
+*Test for Autocorrelation*: Durbin-Watson test
+\[ DW = \sum_{t=2}^{n} (e_t - e_{t-1})^2 / \sum_{t=1}^{n} e_t^2 \]
+
+3. **Homoscedasticity**
+The variance of the residuals should remain constant.
+
+*Tests for Heteroscedasticity*: Breusch-Pagan test, White test, etc.
+
+4. **Normality of Errors**
+The residuals should be normally distributed.
+
+*Tests for Normality*: Jarque-Bera test, Shapiro-Wilk test, etc.
+
+5. **No Multicollinearity**
+The independent variables should not be highly correlated.
+
+*Test for Multicollinearity*: Variance Inflation Factor (VIF)
+\[ VIF_j = 1 / (1 - R^2_j) \]
+
+### ARCH Model
+
+Given a time series of returns \( r_t \), the ARCH model is given by:
+
+1. Mean equation:
+\[ r_t = \mu + \epsilon_t \]
+Where \( r_t \) is the return at time \( t \) and \( \epsilon_t \) is the disturbance at time \( t \).
+
+2. Variance equation:
+\[ \epsilon_t = \sigma_t z_t \]
+\[ \sigma_t^2 = \alpha_0 + \alpha_1 \epsilon_{t-1}^2 \]
+
+Where:
+- \( \sigma_t \) is the conditional standard deviation at time \( t \).
+- \( z_t \) is a white noise error term.
+- \( \alpha_0 \) and \( \alpha_1 \) are parameters.
+
+For ARCH(q):
+\[ \sigma_t^2 = \alpha_0 + \alpha_1 \epsilon_{t-1}^2 + ... + \alpha_q \epsilon_{t-q}^2 \]
+
+
+
 
 
 ## Granger Causality
