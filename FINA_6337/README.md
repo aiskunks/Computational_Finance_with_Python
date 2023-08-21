@@ -130,6 +130,39 @@ This translates to a log return of approximately 4.879%.
 
 Log returns are commonly used in financial econometrics, time series analysis, and other areas of finance where mathematical tractability and consistency are needed. They are especially convenient when analyzing the returns of assets over a long period or when conducting multiperiod analyses.
 
+## Annualized Log Returns (Continuously Compounded Annual Returns)
+
+While log returns give the return of an asset over a specific period (like a day or month), it's often useful to know what the return would be over a standard time period, like a year. This helps in comparing returns across different assets or investments. Annualized log returns allow us to express returns on a standardized yearly basis.
+
+### Annualized Log Return Formula:
+
+Given a log return \( r \) over a period \( t \) and assuming \( n \) such periods make up a year, the annualized log return is calculated using:
+
+\[ R_a = n \times r \]
+
+Where:
+- \( R_a \) is the annualized log return.
+- \( r \) is the average log return for the given period.
+- \( n \) is the number of periods in a year (e.g., if you're working with daily returns, and assuming 252 trading days in a year, \( n = 252 \)).
+
+### Interpretation:
+
+- Annualized log returns provide a way to compare the performance of assets over equivalent yearly periods.
+- This method of annualizing assumes the return compounds in a continuously compounded manner over the course of the year.
+
+### Example:
+
+Assuming you have a daily log return (for a trading day) of 0.001 and there are 252 trading days in a year, the annualized log return would be:
+
+\[ R_a = 252 \times 0.001 = 0.252 \]
+
+This translates to an annualized log return of 25.2%.
+
+### Note:
+
+It's essential to use the correct number of periods for \( n \) depending on the data frequency (daily, monthly, quarterly, etc.) to get accurate annualized returns.
+
+
 
 
 ## Granger Causality
