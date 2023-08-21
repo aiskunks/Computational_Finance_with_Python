@@ -33,6 +33,40 @@ Which is equivalent to a 10% return on the investment.
 
 Simple returns are particularly useful when dealing with assets that do not produce cash flows between the beginning and ending period, such as stocks without dividends. For assets that provide interim cash flows, like bonds with coupon payments, the total return (accounting for both price change and interim cash flows) would be more appropriate.
 
+## Holding Period Returns (HPR)
+
+The Holding Period Return (HPR) represents the total return on an investment over a given period, accounting for all cash flows and capital gains or losses. The holding period can range from a single day to several years, depending on the context.
+
+### Holding Period Return Formula:
+
+The formula for the holding period return is:
+
+\[ HPR = \frac{P_t + D - P_{t-1}}{P_{t-1}} \]
+
+Where:
+- \( HPR \) is the holding period return.
+- \( P_t \) is the ending price of the asset.
+- \( P_{t-1} \) is the beginning (or purchase) price of the asset.
+- \( D \) is the cash dividend or cash flow received during the holding period.
+
+### Interpretation:
+
+- If the \( HPR \) is positive, it indicates a profit over the holding period.
+- If the \( HPR \) is negative, it suggests a loss over the holding period.
+- The value is often expressed as a percentage to show the percentage gain or loss. For instance, a value of 0.07 or 7% means the asset's total return (including dividends or cash flows) was 7% over the holding period.
+
+### Example:
+
+Let's say you bought a stock at a price of $100 (\( P_{t-1} \)), received a dividend of $5 (\( D \)), and sold it later at $110 (\( P_t \)). The holding period return would be:
+
+\[ HPR = \frac{110 + 5 - 100}{100} = \frac{15}{100} = 0.15 \]
+
+Which represents a 15% return on the investment over the holding period.
+
+### Note:
+
+Holding period returns are valuable for assessing the performance of an investment over a specified time frame, taking into account both capital appreciation and any additional income or cash flows. It provides a comprehensive view of the investment's performance.
+
 
 ## Granger Causality
 
