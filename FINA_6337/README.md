@@ -1,77 +1,64 @@
 # Computational Finance with Python
 
 ## Simple Returns (Arithmetic Returns)
-
 Simple returns represent the percentage change in a financial asset's price over a specific period.
 
 ### Simple Return Formula:
-
 For a single-period simple return, the formula is:
-`R_t = (P_t - P_(t-1)) / P_(t-1)`
+\[ R_t = \frac{P_t - P_{t-1}}{P_{t-1}} \]
 
 Where:
-- `R_t` is the simple return at time `t`.
-- `P_t` is the asset price at time `t`.
-- `P_(t-1)` is the asset price at the previous time, `t-1`.
+- \( R_t \) is the simple return at time \( t \).
+- \( P_t \) is the asset price at time \( t \).
+- \( P_{t-1} \) is the asset price at the previous time \( t-1 \).
 
 ### Interpretation:
-
-If `R_t` is positive, it indicates a profit, whereas a negative `R_t` suggests a loss for that period.
+If \( R_t \) is positive, it indicates a profit, whereas a negative \( R_t \) suggests a loss for that period.
 
 ## Holding Period Returns (HPR)
-
 The Holding Period Return (HPR) represents the total return on an investment over a given period.
 
 ### Holding Period Return Formula:
-
 The formula for the holding period return is:
-`HPR = (P_t + D - P_(t-1)) / P_(t-1)`
+\[ HPR = \frac{P_t + D - P_{t-1}}{P_{t-1}} \]
 
 Where:
-- `HPR` is the holding period return.
-- `P_t` is the ending price of the asset.
-- `P_(t-1)` is the beginning (or purchase) price of the asset.
-- `D` is the cash dividend or cash flow received during the holding period.
+- \( HPR \) is the holding period return.
+- \( P_t \) is the ending price of the asset.
+- \( P_{t-1} \) is the beginning (or purchase) price of the asset.
+- \( D \) is the cash dividend or cash flow received during the holding period.
 
 ### Interpretation:
-
-A positive `HPR` indicates a profit over the holding period, and a negative `HPR` suggests a loss.
+A positive \( HPR \) indicates a profit over the holding period, and a negative \( HPR \) suggests a loss.
 
 ## Annualized Returns
-
 Annualized return expresses an investment's return on an annual basis.
 
 ### Annualized Return Formula:
-
 For investments held over multiple years:
-`Annualized Return = (1 + HPR)^(1/n) - 1`
+\[ \text{Annualized Return} = \left(1 + HPR\right)^\frac{1}{n} - 1 \]
 
 Where:
-- `HPR` is the total holding period return.
-- `n` is the number of years of the holding period.
+- \( HPR \) is the total holding period return.
+- \( n \) is the number of years of the holding period.
 
 ### Interpretation:
-
 The annualized return provides an average yearly return rate.
 
 ## Log Returns (Continuously Compounded Returns)
-
 Log returns measure returns useful for mathematical and statistical analyses.
 
 ### Log Return Formula:
-
 The log return for a single period is:
-`r_t = ln(P_t / P_(t-1))`
+\[ r_t = \ln\left(\frac{P_t}{P_{t-1}}\right) \]
 
 Where:
-- `r_t` is the log return at time `t`.
-- `P_t` is the asset price at time `t`.
-- `P_(t-1)` is the asset price at the previous time.
+- \( r_t \) is the log return at time \( t \).
+- \( P_t \) is the asset price at time \( t \).
+- \( P_{t-1} \) is the asset price at the previous time.
 
 ### Interpretation:
-
 Log returns can be additive across time. They simplify certain mathematical and statistical operations.
-
 
 ## Annualized Log Returns (Continuously Compounded Annual Returns)
 
