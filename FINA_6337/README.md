@@ -67,6 +67,38 @@ Which represents a 15% return on the investment over the holding period.
 
 Holding period returns are valuable for assessing the performance of an investment over a specified time frame, taking into account both capital appreciation and any additional income or cash flows. It provides a comprehensive view of the investment's performance.
 
+## Annualized Returns
+
+Annualized return is a method used to express an investment's return (usually a portfolio's return) on an annual basis, taking compounding into account. It provides a clearer picture of the return over time, especially for holding periods that are not one year.
+
+### Annualized Return Formula:
+
+For investments held over multiple years, the annualized return can be calculated using the formula:
+
+\[ \text{Annualized Return} = \left(1 + \text{HPR}\right)^{\frac{1}{n}} - 1 \]
+
+Where:
+- \( \text{HPR} \) is the total holding period return.
+- \( n \) is the number of years of the holding period.
+
+### Interpretation:
+
+- The annualized return provides an average yearly return rate, giving a better perspective of an investment's performance across time.
+- This figure is especially useful when comparing investments of different durations.
+
+### Example:
+
+Suppose you have a holding period return (HPR) of 50% over a 2-year period. The annualized return would be:
+
+\[ \text{Annualized Return} = \left(1 + 0.50\right)^{\frac{1}{2}} - 1 \approx 0.2245 \]
+
+This translates to approximately 22.45% annual return, which means the investment grows on average by this rate each year for the given period.
+
+### Note:
+
+When evaluating investments, it's crucial to consider both the holding period return and the annualized return. The latter is particularly helpful in comparing the performance of investments held for different lengths of time. By annualizing returns, investors can determine which investments are more effective in generating profit on an annual basis.
+
+
 
 ## Granger Causality
 
