@@ -223,6 +223,27 @@ For log returns, the process isn't as straightforward due to the nature of logar
 - Portfolio diversification can help reduce risk. By holding a mix of assets, negative returns from one asset can potentially be offset by positive returns from another.
 - Always consider transaction costs and taxes when rebalancing a portfolio, as they can erode returns.
 
+## Excess Returns
+
+Excess returns, often denoted as \( \alpha \) (alpha), refer to the returns of an investment or portfolio above a benchmark or risk-free rate. It helps in assessing how much additional return the investment or strategy has generated relative to a passive benchmark or the return one could have earned without taking any risk.
+
+### Equation for Excess Return:
+
+The excess return for an investment or portfolio is given by:
+
+\[ \alpha = r_i - r_b \]
+
+Where:
+- \( \alpha \) is the excess return.
+- \( r_i \) is the return of the investment or portfolio.
+- \( r_b \) is the return of the benchmark or the risk-free rate.
+
+### Notes:
+
+- Positive excess returns indicate that the investment or strategy outperformed the benchmark or earned more than the risk-free rate.
+- Negative excess returns imply underperformance relative to the benchmark or that the investment earned less than what could have been earned by investing in a risk-free asset.
+- It's essential to use an appropriate benchmark that reflects the risk and investment style of the asset or strategy being evaluated.
+
 
 
 ## Granger Causality
