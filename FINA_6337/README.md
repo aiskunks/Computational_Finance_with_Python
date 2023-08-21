@@ -1,5 +1,38 @@
 # Computational Finance with Python
 
+## Simple Returns (Arithmetic Returns)
+
+Simple returns, often referred to as arithmetic returns or simply returns, represent the percentage change in a financial asset's price over a specific period. They are the most straightforward method to calculate the return on an investment.
+
+### Simple Return Formula:
+
+For a single-period simple return, the formula is:
+
+\[ R_t = \frac{P_t - P_{t-1}}{P_{t-1}} \]
+
+Where:
+- \( R_t \) is the simple return at time \( t \).
+- \( P_t \) is the asset price at time \( t \).
+- \( P_{t-1} \) is the asset price at the previous time, \( t-1 \).
+
+This formula calculates the return between two consecutive time periods. To find the total return over multiple periods, you can sum the single-period returns.
+
+### Interpretation:
+
+If \( R_t \) is positive, it indicates a profit, whereas a negative \( R_t \) suggests a loss for that period. The value is often multiplied by 100 to get a percentage. For instance, a value of 0.05 or 5% means the asset increased in value by 5% from \( t-1 \) to \( t \).
+
+### Example:
+
+Let's say you bought a stock at a price of $100 (\( P_{t-1} \)) and sold it later at $110 (\( P_t \)). The simple return would be:
+
+\[ R_t = \frac{110 - 100}{100} = \frac{10}{100} = 0.10 \]
+
+Which is equivalent to a 10% return on the investment.
+
+### Note:
+
+Simple returns are particularly useful when dealing with assets that do not produce cash flows between the beginning and ending period, such as stocks without dividends. For assets that provide interim cash flows, like bonds with coupon payments, the total return (accounting for both price change and interim cash flows) would be more appropriate.
+
 
 ## Granger Causality
 
