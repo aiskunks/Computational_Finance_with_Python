@@ -379,6 +379,53 @@ for \( k \in \{0,1\} \).
 Bernoulli distributions are often used to model experiments with binary outcomes: success/failure, yes/no, 1/0, etc.
 
 
+## Uniform Distribution
+
+The Uniform distribution is a probability distribution where all outcomes are equally likely. It can be either discrete or continuous, but the continuous version is more common. In this explanation, we'll primarily focus on the continuous version.
+
+### Continuous Uniform Distribution:
+
+#### Definition:
+A random variable \( X \) is said to be uniformly distributed over the interval \([a, b]\) if its probability density function (pdf) is:
+
+\[ f(x) = \begin{cases} 
+\frac{1}{b-a} & \text{for } a \leq x \leq b \\
+0 & \text{otherwise}
+\end{cases} \]
+
+#### Parameters:
+- \( a \): Start of the interval.
+- \( b \): End of the interval.
+
+#### Expected Value and Variance:
+
+- **Expected Value**: \( E[X] = \frac{a+b}{2} \)
+- **Variance**: \( Var(X) = \frac{(b-a)^2}{12} \)
+
+### Discrete Uniform Distribution:
+
+#### Definition:
+If each of the \( n \) values in a finite set is equally likely, the variable has a discrete uniform distribution. The probability for each value \( x_i \) is:
+
+\[ P(X = x_i) = \frac{1}{n} \]
+
+#### Parameters:
+- \( n \): Number of equally likely outcomes.
+
+#### Expected Value and Variance:
+
+- **Expected Value**: \( E[X] = \frac{n+1}{2} \) (if the outcomes are numbered 1, 2, ..., n)
+- **Variance**: \( Var(X) = \frac{n^2-1}{12} \)
+
+### Properties:
+
+1. The continuous uniform distribution is flat, meaning all intervals of the same length are equally probable.
+2. Both the continuous and discrete uniform distributions are symmetric.
+
+### Usage:
+
+The uniform distribution is often used in computer simulations to generate "random" numbers between a specified range.
+
 
 
 ## Granger Causality
