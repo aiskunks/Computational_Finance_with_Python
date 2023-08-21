@@ -1067,6 +1067,77 @@ For ARCH(q):
 \[ \sigma_t^2 = \alpha_0 + \alpha_1 \epsilon_{t-1}^2 + ... + \alpha_q \epsilon_{t-q}^2 \]
 
 
+### Nonstationarity
+
+A time series is said to be stationary if it has constant mean, variance, and autocorrelation over time. Nonstationarity implies that one or more of these properties change over time.
+
+The most common form of nonstationarity is the **unit root**. For a time series \( Y_t \):
+
+\[ Y_t = Y_{t-1} + \epsilon_t \]
+where \( \epsilon_t \) is a white noise error term, implies \( Y_t \) has a unit root and is nonstationary.
+
+The general representation is:
+\[ \Delta Y_t = \alpha + \beta t + \rho Y_{t-1} + \epsilon_t \]
+If \( |\rho| = 1 \), then \( Y_t \) is nonstationary.
+
+### Testing for Nonstationarity
+
+The **Dickey-Fuller** test is commonly used to detect unit roots. The Augmented Dickey-Fuller (ADF) test extends this to handle autocorrelated residuals. The ADF tests the null hypothesis that a unit root is present.
+
+### Dickey-Fuller Tests
+
+The Dickey-Fuller tests are used to test for the presence of a unit root in a time series, suggesting nonstationarity.
+
+#### 1. Basic Dickey-Fuller Test
+
+The regression equation for this test is:
+\[ \Delta Y_t = \alpha + \beta t + \gamma Y_{t-1} + \epsilon_t \]
+Where:
+- \( \Delta Y_t \) is the difference in the series at time \( t \)
+- \( \alpha \) is a constant
+- \( \beta t \) is a trend term
+- \( \gamma Y_{t-1} \) is the lagged level of the series
+- \( \epsilon_t \) is the error term
+
+The null hypothesis for the test is \( \gamma = 0 \), indicating nonstationarity.
+
+#### 2. Augmented Dickey-Fuller (ADF) Test
+
+The ADF test equation is:
+\[ \Delta Y_t = \alpha + \beta t + \gamma Y_{t-1} + \delta_1 \Delta Y_{t-1} + \delta_2 \Delta Y_{t-2} + ... + \delta_p \Delta Y_{t-p} + \epsilon_t \]
+Where:
+- \( \delta_1, \delta_2, ... \) are the coefficients of the lagged differences of the series to account for autocorrelation.
+
+Again, the null hypothesis is \( \gamma = 0 \).
+
+### KPSS (Kwiatkowski-Phillips-Schmidt-Shin) Test
+
+The KPSS test is used to test for stationarity in a time series.
+
+#### 1. Level Stationarity
+
+Model:
+\[ Y_t = \mu + u_t \]
+Where:
+\[ u_t = \rho u_{t-1} + \epsilon_t \]
+And:
+\[ \epsilon_t \sim WN(0, \sigma^2) \]
+
+Test Statistic:
+\[ LM_{level} = \frac{\sum_{t=1}^{T}S^2_t}{\sigma^2} \]
+Where:
+\[ S_t = \sum_{i=1}^{t}u_i \]
+
+#### 2. Trend Stationarity
+
+Model:
+\[ Y_t = \mu + \lambda t + u_t \]
+
+Test Statistic:
+\[ LM_{trend} = \frac{\sum_{t=1}^{T}S^2_t}{\sigma^2} \]
+
+For both versions of the test, if the LM statistic exceeds the critical value, the null hypothesis of stationarity is rejected.
+
 
 
 
